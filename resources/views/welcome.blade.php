@@ -8,8 +8,8 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
 
-         /* Estilo para el encabezado */
-         .header-bg {
+        /* Estilo para el encabezado */
+        .header-bg {
             background-color: #FF6600;
             color: white;
             padding: 15px 0;
@@ -29,7 +29,7 @@
 
         /* Estilo para el navbar */
         .navbar {
-            background-color: #FF6600;
+            background-color: #FF6600; /* Color naranja */
         }
 
         .navbar .navbar-brand,
@@ -42,7 +42,7 @@
         }
 
         .navbar .nav-link:hover {
-            color: #e65c00;
+            color: #e65c00; /* Color naranja oscuro al hacer hover */
         }
 
         /* Margen entre los formularios */
@@ -53,6 +53,7 @@
         /* Asegura que el footer se quede abajo en la página */
         html, body {
             height: 100%;
+            margin: 0;
         }
 
         .content {
@@ -61,14 +62,15 @@
         }
 
         footer {
-            position: absolute;
+            position: relative;
             bottom: 0;
             width: 100%;
-            background-color: #FF6600; /* El mismo color que el botón */
+            background-color: #FF6600; /* El mismo color que el navbar */
             color: white;
             text-align: center;
             padding: 15px 0;
         }
+
         /* Fondo de la imagen de la UNAB */
         .unab-bg {
             background-image: url('https://unired.edu.co/images/instituciones/UNAB/2017/junio/unab.jpg');
@@ -76,14 +78,17 @@
             background-position: center;
             height: 400px;
         }
+
         /* Estilo para las tarjetas */
         .card-body {
             background-color: rgba(255, 255, 255, 0.8); /* Sin fondo naranja */
         }
+
         .carousel-inner img {
             width: 100%;
             height: 400px;
         }
+
         /* Fondo naranja fuera de las tarjetas */
         
         /* Botón naranja */
@@ -92,16 +97,18 @@
             border-color: #FF6600;
             color: white;
         }
+
         .btn-orange:hover {
             background-color: #e65c00;
             border-color: #e65c00;
         }
+
     </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">UNAB</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -125,7 +132,7 @@
     <div class="unab-bg d-flex align-items-center justify-content-center text-white text-center logo-center">
         <img src="https://media.licdn.com/dms/image/v2/D4E0BAQFCZAC0pXa9-A/company-logo_200_200/company-logo_200_200/0/1719230620874/universidad_autonoma_de_bucaramanga_logo?e=1748476800&v=beta&t=wQWPWS1o7VI1dzX2e3ZKM-7To-jnHN5gMKElvpKjqjI" alt="Logo UNAB" class="img-fluid" style="max-width: 100%; max-height: 150px;">
     </div>
-    
+
     <!-- Carrusel de promociones -->
     <div id="promoCarousel" class="carousel slide mt-4" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -214,30 +221,10 @@
             <!-- Más tarjetas -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://scontent.feoh11-1.fna.fbcdn.net/v/t39.30808-6/473770261_1046874690817509_6380391912682699141_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KgM6ZXR4KMMQ7kNvgHvS1zt&_nc_zt=23&_nc_ht=scontent.feoh11-1.fna&_nc_gid=A3JzkeuyfpA5LSgoVuPex-8&oh=00_AYCR3Vm4p6NUjgy0fC_-feY-Dt8JPrrzPJDPTvfvC_7ruA&oe=67C40197" class="card-img-top" alt="Descuento en Cursos">
+                    <img src="https://scontent.feoh11-1.fna.fbcdn.net/v/t39.30808-6/473770261_1046874690817509_6380391912682699141_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KgM6ZXR4KMMQ7kNvgHvS1zt&_nc_zt=23&_nc_ht=scontent.feoh11-1.fna&_nc_gid=A3JzkeuyfpA5LSgoVuPex-8&oh=00_AYCR3Vm4p6NUjgy0fC_-feY-Dt8JPrrzPJDPTvfvC_7ruA&oe=67C40197" class="card-img-top" alt="Estudiantes Internacionales">
                     <div class="card-body">
-                        <h5 class="card-title">Descuento en Cursos de Verano</h5>
-                        <p class="card-text">Inscríbete en cursos de verano y recibe un 15% de descuento. ¡No dejes pasar la oportunidad!</p>
-                        <a href="#" class="btn btn-orange">Más información</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://scontent.feoh11-1.fna.fbcdn.net/v/t39.30808-6/473770261_1046874690817509_6380391912682699141_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KgM6ZXR4KMMQ7kNvgHvS1zt&_nc_zt=23&_nc_ht=scontent.feoh11-1.fna&_nc_gid=A3JzkeuyfpA5LSgoVuPex-8&oh=00_AYCR3Vm4p6NUjgy0fC_-feY-Dt8JPrrzPJDPTvfvC_7ruA&oe=67C40197" class="card-img-top" alt="Examen de Admisión">
-                    <div class="card-body">
-                        <h5 class="card-title">Examen de Admisión sin Costo</h5>
-                        <p class="card-text">¡Haz el examen de admisión sin ningún costo! Aprovecha esta promoción por tiempo limitado.</p>
-                        <a href="#" class="btn btn-orange">Inscríbete ahora</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://scontent.feoh11-1.fna.fbcdn.net/v/t39.30808-6/473766365_1046874694150842_2470413042666734052_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=P-jVgvqhFuMQ7kNvgHxLmFP&_nc_zt=23&_nc_ht=scontent.feoh11-1.fna&_nc_gid=AYZuG1LeZXs0I_a0cTLs-ng&oh=00_AYAOgdRGCqKRFhybmnjxlTG2dNe2mkA6QgPuLfENo5Yw5w&oe=67C3F11A" class="card-img-top" alt="Promoción de Biblioteca">
-                    <div class="card-body">
-                        <h5 class="card-title">Promoción de Biblioteca Digital</h5>
-                        <p class="card-text">Accede a más de 1000 libros digitales con un descuento exclusivo para estudiantes.</p>
+                        <h5 class="card-title">Promoción para Estudiantes Internacionales</h5>
+                        <p class="card-text">Recibe un 15% de descuento en la matrícula si eres estudiante extranjero y te inscribes a programas presenciales.</p>
                         <a href="#" class="btn btn-orange">Ver detalles</a>
                     </div>
                 </div>
@@ -245,9 +232,13 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS and dependencies -->
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Universidad Autónoma de Bucaramanga - Todos los derechos reservados</p>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
