@@ -21,7 +21,13 @@ return new class extends Migration
             $table->dateTime("updated_at");
             $table->timestamps();
             $table->timestamps();
-        });
+         //clave foranea
+            $table->unsignedBigInteger("products");
+            $table->foreign("products_id")->references("id")->on("prdocuts");
+         // foreing key users    
+            $table->unsignedBigInteger("users_id");
+            $table->foreign("users_id")->references("id")->on("users");
+    });
     }
 
     /**

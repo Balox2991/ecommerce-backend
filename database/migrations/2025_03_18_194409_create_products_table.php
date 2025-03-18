@@ -20,6 +20,10 @@ return new class extends Migration
             $table->dateTime("create_at");
             $table->dateTime("updated_at");
             $table->timestamps();
+
+          //clave foranea
+            $table->unsignedBigInteger("category_id");
+            $table->foreign("category_id")->references("id")->on("category");
         });
     }
 
