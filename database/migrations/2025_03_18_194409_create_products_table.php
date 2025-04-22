@@ -17,8 +17,6 @@ return new class extends Migration
             $table->id();
             $table->string("name");
             $table->decimal("price");
-            $table->dateTime("create_at");
-            $table->dateTime("updated_at");
             $table->timestamps();
 
           //clave foranea

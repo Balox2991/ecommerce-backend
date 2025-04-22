@@ -6,37 +6,23 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
-        Schema::create('cartitem', function (Blueprint $table) {
-            $table->id();
-            $table->id();
+        Schema::create('cartitems', function (Blueprint $table) {
+            $table->id(); // Solo una vez
             $table->integer("quantity");
-            $table->dateTime("create_at");
-            $table->dateTime("updated_at");
-            $table->timestamps();
-            $table->timestamps();
-         //clave foranea
-            $table->unsignedBigInteger("products");
-            $table->foreign("products_id")->references("id")->on("prdocuts");
-         // foreing key users    
-            $table->unsignedBigInteger("users_id");
-            $table->foreign("users_id")->references("id")->on("users");
-    });
+            $table->timestamps(); // Esto crea created_at y updated_at
+
+            // Clave foránea producto
+            $table->foreignId("product_id")->constrained("products");
+
+            // Clave foránea usuario
+            $table->foreignId("user_id")->constrained("users");
+        });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
-        Schema::dropIfExists('cartitem');
+        Schema::dropIfExists('cartitems');
     }
 };
