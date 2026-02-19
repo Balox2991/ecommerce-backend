@@ -2,4 +2,3 @@
 
 ## Juan David Amaya Quintero
 
-¿Por que creen que deberian pasar la materia de Backend?
